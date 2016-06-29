@@ -1,0 +1,53 @@
+
+Printer(Almoxarifado):
+   name: Almoxarifado
+   ip: 10.190.7.225
+
+Printer(Biblioteca):
+   name: Biblioteca
+   ip: 10.190.4.172
+
+Printer(Professores):
+   name: Professores
+   ip: 10.190.9.216
+
+Printer(Compras):
+   name: Compras
+   ip: 10.190.7.156
+
+Printer(Direcao):
+   name: Direção
+   ip: 10.190.10.226
+
+Printer(GabDirecao):
+   name: Gabinete da Direção
+   ip: 10.190.5.199
+
+Printer(Garagem):
+   name: Garagem
+   ip: 10.190.7.98
+
+Printer(GabDirecao):
+   name: Laboratórios
+   ip: 10.190.10.155
+
+Printer(RegEscolar):
+   name: Reg. Escolar
+   ip: 10.190.3.102
+
+Printer(RH):
+   name: RH
+   ip: 10.190.10.111
+
+Printer(SecCoord):
+   name: Sec. das Coordenações
+   ip: 10.190.7.40
+
+Recipient(lidimaria):
+  name: Lidimária
+  email: lidimaria.oliveira@ufersa.edu.br
+
+Admin(eduardo):
+  name: Eduardo
+  email: eduardo.medeiros@ufersa.edu.br
+

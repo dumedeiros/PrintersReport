@@ -1,0 +1,58 @@
+
+.table-header tr td:last-child {
+    padding-left: 50px;
+}
+
+.title {
+    padding: 15px 0;
+    font-size: x-large;
+}
+
+body {
+    /*font-family: Verdana;*/
+    font-family: "Courier New";
+}
+
+body table {
+    text-align: left;
+}
+
+table tr {
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+}
+
+body table tr:first-child th {
+    /*width: 150px;*/
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body th {
+    width: 80px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+body table tr:first-child th:first-child {
+    width: 230px;
+}
+
+body table td {
+    font-size: 13px;
+}
+
+.other-tables tr td {
+    padding-left: 6px;
+}
+
+hr {
+    margin-top: 1px;
+    border: 0;
+    height: 1.6px;
+    background: black;
+}
+

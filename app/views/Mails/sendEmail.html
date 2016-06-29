@@ -1,0 +1,24 @@
+<html>
+<body>
+<div>
+    <span>Segue em anexo os relatórios mensais das impressoras</span>
+#{if failures}
+    <div style="color: red">
+        <h1>Atenção</h1>
+        <span> Não foi possível se conectar à${failures.pluralize()} seguinte${failures.pluralize()}
+            impressora${failures.pluralize()}: </span>
+        <ul>
+            #{list failures}
+                <li>${_.name}</li>
+            #{/list}
+        </ul>
+
+        <span>Por favor, informar ao administrador do sistema através do seguinte email:</span>
+        <span>${admin.email}</span>
+    </div>
+
+#{/if}
+
+</div>
+</body>
+</html>

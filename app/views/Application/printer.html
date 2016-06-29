@@ -1,0 +1,112 @@
+<link media="print, screen" type="text/css" rel="stylesheet" href="/public/stylesheets/printers.css"/>
+
+
+<div class="title"><span>Cont de uso</span></div>
+<div>
+    <table class="table-header">
+        <tr>
+            <td>Data/Hora</td>
+            <td>: ${date.toUpperCase()}</td>
+        </tr>
+        <tr>
+            <td>No. serie do aparelho</td>
+            <td>: ${printer.GXI_SYS_SERIAL_NUM.noQuotes()}</td>
+        </tr>
+    </table>
+</div>
+
+<hr/>
+
+<p/>
+<div class="other-tables">
+    <div>
+        <table>
+            <tr>
+                <th>Utiliz total</th>
+                <th>Impr.</th>
+                <th>Cop.</th>
+                <th>Imp fax</th>
+                <th>Relat</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Monocr Simplex</td>
+                <td>${printer.GXI_BILLING_SIMPLEX_BW_PRINT_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_SIMPLEX_BW_COPY_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_SIMPLEX_BW_FAX_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_SIMPLEX_BW_REPORT_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_SIMPLEX_BW_TOTAL_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 68px">Duplex</td>
+                <td>${printer.GXI_BILLING_DUPLEX_BW_PRINT_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_DUPLEX_BW_COPY_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_DUPLEX_BW_FAX_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_DUPLEX_BW_REPORT_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_DUPLEX_BW_TOTAL_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Total impressoes</td>
+                <td>${printer.GXI_BILLING_PRINT_TOTAL_IMP_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_COPY_TOTAL_IMP_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_FAX_TOTAL_IMP_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_REPORT_TOTAL_IMP_CNT.noQuotes()}</td>
+                <td>${printer.GXI_BILLING_TOTAL_IMP_CNT.noQuotes()}</td>
+            </tr>
+        </table>
+    </div>
+
+    <br/>
+
+    <div>
+        <table>
+            <tr>
+                <th>Util env fax (PSTN)</th>
+                <th>paginas</th>
+            </tr>
+            <tr>
+                <td>Fax int env</td>
+                <td>${printer.GXI_BILLING_EMBEDDED_FAX_SENT_CNT.noQuotes()}</td>
+            </tr>
+        </table>
+    </div>
+
+    <br/>
+
+    <div>
+        <table>
+            <tr>
+                <th>Enviar uso</th>
+                <th>paginas</th>
+            </tr>
+            <tr>
+                <td>Env p email</td>
+                <td>${printer.GXI_BILLING_SEND_TO_EMAIL_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Env. p/ SMB</td>
+                <td>${printer.GXI_BILLING_SEND_TO_SMB_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Env. p/ FTP</td>
+                <td>${printer.GXI_BILLING_SEND_TO_FTP_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Env. p/ USB</td>
+                <td>${printer.GXI_BILLING_SEND_TO_USB_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Env. p/ PC</td>
+                <td>${printer.GXI_BILLING_SEND_TO_PC_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Env. p/ outros</td>
+                <td>${printer.GXI_BILLING_SEND_TO_OTHERS_CNT.noQuotes()}</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>${printer.GXI_BILLING_SEND_TO_TOTAL_CNT.noQuotes()}</td>
+            </tr>
+        </table>
+    </div>
+</div>
