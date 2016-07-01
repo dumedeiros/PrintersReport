@@ -2,6 +2,7 @@
 package notifiers;
 
 import models.Admin;
+import models.Config;
 import models.Printer;
 import models.Recipient;
 import org.apache.commons.mail.EmailAttachment;
@@ -22,7 +23,7 @@ public class Mails extends Mailer {
     public static final String FORMAT = "MMMMM/yyyy";
 
 
-    public static void sendEmail(List<File> filesToAttach, List<Printer> failures) {
+    public static void sendEmail(List<File> filesToAttach, List<Printer> failures, List<Recipient> recipients) {
         Admin admin = Admin.all().first();
 
         LocalDate date = LocalDate.now();
@@ -33,7 +34,7 @@ public class Mails extends Mailer {
         setFrom(Play.configuration.getProperty(MAILER_FROM));
 
 
-        for (Recipient recipient : Recipient.<Recipient>findAll()) {
+        for (Recipient recipient : recipients) {
             addRecipient(recipient.email);
         }
 
@@ -45,10 +46,11 @@ public class Mails extends Mailer {
             attachment.setPath(file.getPath());
             addAttachment(attachment);
         }
+
+        Config config = Config.all().first();
+
         //Enviado para o template para no caso de falhas o destinatario ter acesso ao email
-
-
-        send(failures, admin);
+        send(failures, admin, config);
     }
 
 }

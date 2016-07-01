@@ -1,0 +1,528 @@
+14:53:43,823 INFO  ~ Starting /Users/eduardomedeiros/IdeaProjects/PrintersReport
+14:53:44,439 INFO  ~ Module pdf is available (/Applications/play-1.4.2/modules/pdf-0.9)
+14:53:44,439 INFO  ~ Module crud is available (/Applications/play-1.4.2/modules/crud)
+14:53:44,536 INFO  ~ Precompiling ...
+14:53:52,909 INFO  ~ Connected to jdbc:mysql://localhost/printers?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+14:53:53,766 INFO  ~ Application 'PrintersReport' is now started !
+14:53:54,341 INFO  ~ Listening for HTTP on port 9000 ...
+14:54:12,145 INFO  ~ Starting /Users/eduardomedeiros/IdeaProjects/PrintersReport
+14:54:12,731 INFO  ~ Module pdf is available (/Applications/play-1.4.2/modules/pdf-0.9)
+14:54:12,731 INFO  ~ Module crud is available (/Applications/play-1.4.2/modules/crud)
+14:54:12,805 INFO  ~ Precompiling ...
+14:54:21,097 INFO  ~ Connected to jdbc:mysql://localhost/printers?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+14:54:21,846 INFO  ~ Application 'PrintersReport' is now started !
+14:54:22,189 INFO  ~ Listening for HTTP on port 9000 ...
+15:04:09,741 INFO  ~ Starting /Users/eduardomedeiros/IdeaProjects/PrintersReport
+15:04:10,225 INFO  ~ Module pdf is available (/Applications/play-1.4.2/modules/pdf-0.9)
+15:04:10,225 INFO  ~ Module crud is available (/Applications/play-1.4.2/modules/crud)
+15:04:10,298 INFO  ~ Precompiling ...
+15:04:18,011 INFO  ~ Connected to jdbc:mysql://localhost/printers?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+15:04:18,780 INFO  ~ Application 'PrintersReport' is now started !
+15:04:19,244 INFO  ~ Listening for HTTP on port 9000 ...
+16:16:08,757 INFO  ~ Starting /Users/eduardomedeiros/IdeaProjects/PrintersReport
+16:16:09,547 INFO  ~ Module pdf is available (/Applications/play-1.4.2/modules/pdf-0.9)
+16:16:09,547 INFO  ~ Module crud is available (/Applications/play-1.4.2/modules/crud)
+16:16:10,558 WARN  ~ You're running Play! in DEV mode
+16:16:10,697 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+16:16:14,600 ERROR ~ 
+
+@70hmpj4ae
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:21,005 ERROR ~ 
+
+@70hmpj4ai
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:27,349 ERROR ~ 
+
+@70hmpj4aj
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:32,990 ERROR ~ 
+
+@70hmpj4ak
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:39,812 ERROR ~ 
+
+@70hmpj4al
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:44,519 ERROR ~ 
+
+@70hmpj4am
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:51,186 ERROR ~ 
+
+@70hmpj4an
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:16:52,023 ERROR ~ 
+
+@70hmpj4ao
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:17:00,593 ERROR ~ 
+
+@70hmpj4ap
+Internal Server Error (500) for request GET /@documentation/pt/home
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+
+play.exceptions.CompilationException: Syntax error, insert "new ClassType ( )" to complete ClassInstanceCreationExpression
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:480)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:166)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:84)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.classloading.ApplicationClasses.getAssignableClasses(ApplicationClasses.java:70)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:477)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:418)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.Router.parse(Router.java:171)
+	at play.mvc.Router.parse(Router.java:199)
+	at play.mvc.Router.parse(Router.java:173)
+	at play.mvc.Router.load(Router.java:53)
+	at play.mvc.Router.detectChanges(Router.java:232)
+	at Invocation.HTTP Request(Play!)
+16:17:09,737 INFO  ~ Starting /Users/eduardomedeiros/IdeaProjects/PrintersReport
+16:17:10,292 INFO  ~ Module pdf is available (/Applications/play-1.4.2/modules/pdf-0.9)
+16:17:10,292 INFO  ~ Module crud is available (/Applications/play-1.4.2/modules/crud)
+16:17:11,020 WARN  ~ You're running Play! in DEV mode
+16:17:11,094 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+16:17:16,558 INFO  ~ Connected to jdbc:mysql://localhost/printers?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+16:17:17,789 INFO  ~ Application 'PrintersReport' is now started !
+16:30:32,378 ERROR ~ 
+
+@70hn1g380
+Internal Server Error (500) for request GET /application/manual
+
+Template execution error (In /app/views/Application/manual.html around line 8)
+Execution error occured in template /app/views/Application/manual.html. Exception raised was NullPointerException : Cannot invoke method error() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method error() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:288)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:839)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.manual(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method error() on null object
+	at /app/views/Application/manual.html.(line:8)
+	at play.templates.FastTags._ifError(FastTags.java:267)
+	at play.templates.FastTags$_ifError$3.call(Unknown Source)
+	at /app/views/Application/manual.html.(line:8)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	... 13 more
+16:33:58,679 ERROR ~ 
+
+@70hn1g381
+application.manual action not found
+
+Action not found
+Action application.manual could not be found. Error raised is No method public static void manual() was found in class controllers.application
+
+play.exceptions.ActionNotFoundException: Action application.manual not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:598)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void manual() was found in class controllers.application
+	... 3 more
+16:34:10,877 ERROR ~ 
+
+@70hn1g384
+Internal Server Error (500) for request GET /application/manually
+
+No route found (In /app/views/Application/manually.html around line 5)
+No route able to invoke action Application.doManually was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:273)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:839)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.manually(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+16:36:58,433 ERROR ~ 
+
+@70hn1g386
+Internal Server Error (500) for request GET /application/domanually?
+
+Template not found (In /app/controllers/Application.java around line 20)
+The template Application/doManually.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Application/doManually.html
+	at play.mvc.Controller.renderTemplate(Controller.java:848)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.doManually(Application.java:20)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+16:37:25,432 ERROR ~ 
+
+@70hn1g387
+application.domanually action not found
+
+Action not found
+Action application.domanually could not be found. Error raised is No method public static void domanually() was found in class controllers.application
+
+play.exceptions.ActionNotFoundException: Action application.domanually not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:598)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void domanually() was found in class controllers.application
+	... 3 more
+16:37:41,732 ERROR ~ 
+
+@70hn1g38a
+Internal Server Error (500) for request GET /application/manually
+
+No route found (In /app/views/Application/manually.html around line 5)
+No route able to invoke action Application.doManually was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:273)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:839)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.manually(Application.java:34)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+16:37:55,864 ERROR ~ 
+
+@70hn1g38d
+Internal Server Error (500) for request GET /application/manually
+
+No route found (In /app/views/Application/manually.html around line 5)
+No route able to invoke action Application.doManually was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:273)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:839)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.manually(Application.java:34)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+16:38:06,561 ERROR ~ 
+
+@70hn1g38g
+Internal Server Error (500) for request GET /application/manually
+
+No route found (In /app/views/Application/manually.html around line 5)
+No route able to invoke action Application.doManually was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:273)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:839)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.manually(Application.java:32)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+16:38:20,764 ERROR ~ 
+
+@70hn1g38j
+Internal Server Error (500) for request GET /application/manually
+
+No route found (In /app/views/Application/manually.html around line 5)
+No route able to invoke action Application.doManually was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:273)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:839)
+	at play.mvc.Controller.renderTemplate(Controller.java:817)
+	at play.mvc.Controller.render(Controller.java:879)
+	at controllers.Application.manually(Application.java:32)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	at Invocation.HTTP Request(Play!)
+16:40:01,865 ERROR ~ 
+
+@70hn1g38k
+Internal Server Error (500) for request GET /application/manually
+
+Compilation error (In /app/controllers/Application.java around line 15)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error on token ",", FormalParameter expected after this token
+
+play.exceptions.CompilationException: Syntax error on token ",", FormalParameter expected after this token
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:678)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:522)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:328)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)

@@ -17,4 +17,8 @@ public class Printer extends Model {
     public String toString() {
         return name;
     }
+
+    public static Printer finByIP(String ip) {
+        return Printer.find("ip", ip).first();
+    }
 }

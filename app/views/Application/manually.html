@@ -1,0 +1,68 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+
+<section class="container">
+    <div class="box effect7">
+        <div class="inner-box">
+            <form action="@{Application.doManually()}">
+                <div>
+                    <h3><img src="../../../public/images/printer.png">
+                        Selecione a(s) impressora(s)</h3>
+                </div>
+            #{field 'ips'}
+                <div class="error text-center center-block">
+                ${field.error}
+                </div>
+            #{/field}
+
+                <div class="row margined">
+                #{list printers}
+                    <div class="col-xs-6">
+                        #{field _.ip}
+                            <div class="checkbox ${field.error ? 'disabled' : ''}">
+                                <label>
+                                    <input type="checkbox" name="ips" value="${_.ip}"
+                                    ${field.error ? 'disabled' : ''}
+                                    ${flash['ips'] ? (flash['ips'].contains(_.ip) ? 'checked' : '') : ''}>
+                                ${_.name}
+                                    #{ifError _.ip}
+                                        <div>
+                                        <span class="glyphicon glyphicon-exclamation-sign error"
+                                              style="content: ' '"></span>
+                                            <span class="error">${field.error}</span>
+                                        </div>
+                                    #{/ifError}
+                                </label>
+
+                            </div>
+
+                        #{/field}
+                    </div>
+                #{/list}
+                </div>
+
+                <br/>
+
+            #{field 'recipients'}
+                <fieldset class="form-group">
+                    <label for="recipients">Emails dos Receptores</label>
+                    <input type="text" class="form-control ${field.errorClass}" id="recipients"
+                           name="recipients"
+                           value='${flash['recipients']}'
+                           placeholder="Email1, Email2, Email3...">
+                    <br/>
+                    <span class="error">${field.error}</span>
+                </fieldset>
+            #{/field}
+                <p/>
+
+                <div class="text-center">
+                    <input type="submit" value="Enviar" id="enviar" class="btn btn-lg btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</section>

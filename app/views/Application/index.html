@@ -1,3 +1,26 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+<section class="container" style="height: 400px">
+    <div class="box effect7">
+        <div class="inner-box center-block" style="width: 80%;">
+            <h3> Relatório das impressoras</h3>
+
+        #{if flash.success}
+            <div class="alert alert-success alert-dismissible text-center" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                ${flash.success}
+            </div>
+        #{/if}
+
+            <br/>
+
+            <a href="@{Application.manually()}"><img src="../../../public/images/select.png">Selecionar Impressoras</a>
+
+            <div style="color: gray">
+                Essa operação pode demorar um tempo considerável, dependendo do nº de impressoras
+                na rede. Portanto, ao selecione aguarde.
+            </div>
+        </div>
+    </div>
+</section>

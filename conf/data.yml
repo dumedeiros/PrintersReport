@@ -27,7 +27,7 @@ Printer(Garagem):
    name: Garagem
    ip: 10.190.7.98
 
-Printer(GabDirecao):
+Printer(Laboratorios):
    name: Laboratórios
    ip: 10.190.10.155
 
@@ -40,7 +40,7 @@ Printer(RH):
    ip: 10.190.10.111
 
 Printer(SecCoord):
-   name: Sec. das Coordenações
+   name: Sec. das Coord.
    ip: 10.190.7.40
 
 Recipient(lidimaria):
@@ -50,4 +50,9 @@ Recipient(lidimaria):
 Admin(eduardo):
   name: Eduardo
   email: eduardo.medeiros@ufersa.edu.br
+
+Config(config):
+  externalLink: https://printersreport.localtunnel.me
+  internalLink: 10.190.7.183
+  port: 9000
 

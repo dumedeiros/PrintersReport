@@ -3,8 +3,10 @@ package controllers;
 import Utils.DateUtils;
 import com.google.gson.JsonObject;
 import models.Printer;
+import models.Recipient;
 import notifiers.Mails;
 import org.allcolor.yahp.converter.IHtmlToPdfTransformer;
+import org.apache.commons.collections.CollectionUtils;
 import play.Play;
 import play.jobs.Job;
 import play.jobs.On;
@@ -21,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 //Fire at 9:00 AM on the last day of every month
-@On("0 0 9 L * ?")
+@On("0 0 10 L * ?")
 //@On("0/5 * * * * ?") // -> Every 5 seconds Cron notation
 public class FormPDFReportJob extends Job<File> {
 
@@ -32,8 +34,25 @@ public class FormPDFReportJob extends Job<File> {
     public static final String PRINTER = "printer";
     public static final String DATE = "date";
     public static final String DOT_PDF = ".pdf";
+    public List<Printer> printers;
+    public List<Recipient> recipients;
 
     Map<String, Object> pdfArgs;
+
+    public FormPDFReportJob setPrinters(List<Printer> printers) {
+        this.printers = printers;
+        return this;
+    }
+
+    public FormPDFReportJob setRecipients(List<Recipient> recipients) {
+        this.recipients = recipients;
+        return this;
+    }
+
+    public void reset() {
+        this.printers = null;
+        this.recipients = null;
+    }
 
     /**
      * Retorna o nome da pasta temporaria de arquivos
@@ -59,6 +78,7 @@ public class FormPDFReportJob extends Job<File> {
         new File(tempFolder()).mkdir();
     }
 
+    @Override
     public void doJob() {
 
         Printer actualPrinter = null;
@@ -67,11 +87,19 @@ public class FormPDFReportJob extends Job<File> {
         createTempFolder();
         List<File> files = new ArrayList<File>();
 
-        for (Printer printer : Printer.<Printer>findAll()) {
+        if (CollectionUtils.isEmpty(printers)) {
+            printers = Printer.findAll();
+        }
+
+        if (CollectionUtils.isEmpty(recipients)) {
+            recipients = Recipient.findAll();
+        }
+
+        for (Printer p : printers) {
             try {
-                actualPrinter = printer;
+                actualPrinter = p;
                 //Acessa o recurso
-                JsonObject obj = WS.url(ADDRESS.replace(IP, printer.ip)).get().getJson().getAsJsonObject();
+                JsonObject obj = WS.url(ADDRESS.replace(IP, p.ip)).get().getJson().getAsJsonObject();
 
                 //Passos necessários para poder renderizar com o módulo PDF
                 Scope.RenderArgs ra = new Scope.RenderArgs();
@@ -86,7 +114,7 @@ public class FormPDFReportJob extends Job<File> {
 
                 StringBuilder filePath = new StringBuilder()
                         .append(tempFolder())
-                        .append(printer.name)
+                        .append(p.name)
                         .append(DOT_PDF);
 
                 File file = new File(filePath.toString());
@@ -97,7 +125,9 @@ public class FormPDFReportJob extends Job<File> {
                 failures.add(actualPrinter); //caso tenha falha de comunicacao adicionar na lista para ser enviado por email
             }
         }
-        Mails.sendEmail(files, failures);
+
+        Mails.sendEmail(files, failures, recipients);
+        reset();
     }
 }
 
