@@ -3,6 +3,7 @@ package controllers;
 import models.Admin;
 import models.Printer;
 import models.Recipient;
+import play.Logger;
 import play.jobs.Job;
 import play.jobs.OnApplicationStart;
 import play.test.Fixtures;
@@ -17,6 +18,7 @@ public class Bootstrap extends Job {
      */
     @Override
     public void doJob() throws Exception {
+        Logger.setUp("DEBUG"); //Habilitar o log de DEBUG
         if (Printer.count() == 0 && Recipient.count() == 0 && Admin.count() == 0) {
             Fixtures.deleteAllModels();
             Fixtures.loadModels("data.yml");

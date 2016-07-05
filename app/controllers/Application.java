@@ -54,7 +54,7 @@ public class Application extends Controller {
 
     public static void manually() {
         List<Printer> printers = Printer.findAll();
-        //QuickLoad
+//        QuickLoad
 //        for (Printer p : printers) {
 //            Validation.addError(p.ip, ERROR);
 //        }
@@ -64,11 +64,9 @@ public class Application extends Controller {
             } catch (Exception e) {
                 Validation.addError(printer.ip, ERROR);
             }
-
         }
 
         render(printers);
-
     }
 
     public static void index() {
